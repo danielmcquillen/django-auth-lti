@@ -31,9 +31,12 @@ setup(
     ],
     install_requires=[
         "Django>=2.0",
-        "ims-lti-py==0.6",
+        "ims-lti-py==0.6.1",
         "django-braces==1.3.1",
         "oauth2==1.9.0.post1",  # to catch errors uncaught by ims-lti-py
+    ],
+    dependency_links=[
+        'https://github.com/danielmcquillen/ims-lti-py@master#egg=ims-lti-py'
     ],
     tests_require=[
         'mock',
