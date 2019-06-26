@@ -1,5 +1,5 @@
 from unittest import TestCase
-from mock import MagicMock
+from unittest.mock import MagicMock
 from django_auth_lti.verification import is_allowed
 from django.core.exceptions import ImproperlyConfigured, PermissionDenied
 

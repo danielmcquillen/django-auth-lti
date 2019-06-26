@@ -1,4 +1,4 @@
-from django.core.urlresolvers import reverse_lazy
+from django.urls import reverse_lazy
 from django.core.exceptions import ImproperlyConfigured
 from django.shortcuts import redirect
 from braces.views import LoginRequiredMixin
