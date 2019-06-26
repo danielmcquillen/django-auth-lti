@@ -1,7 +1,10 @@
 import unittest
+
+from unittest import mock
 from unittest.mock import patch
-from django_auth_lti.middleware import LTIAuthMiddleware
-from . import helpers
+from django.test import RequestFactory
+from django.contrib.auth import models
+from django_auth_lti.middleware_patched import MultiLTILaunchAuthMiddleware
 
 
 @patch('django_auth_lti.middleware.logger')
